@@ -1,4 +1,4 @@
-import 'package:fluttter/TarifPage.dart'
+//import 'package:fluttter/TarifPage.dart';
 import 'package:yemekler/yemeklerPage.dart';
 import 'package:flutter/material.dart';
 

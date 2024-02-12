@@ -14,8 +14,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:yemekler/TarifPage.dart';
 
-import 'package:flutter/TarifPage.dart';
+//import 'package:flutter/TarifPage.dart';
 
 
 class YemeklerPage extends StatefulWidget {
