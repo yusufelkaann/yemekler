@@ -87,26 +87,27 @@ class YemekRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Row(
-        children: [
-          Image.network(
-            yemekUrl,
-            width: 77,
-            height: 77,
-          ),
-          ListTile(
+    return Row(
+      children: [
+        Image.network(
+          yemekUrl,
+          width: 77,
+          height: 77,
+        ),
+        SizedBox(
+          width: 30,
+          child: ListTile(
             title: Text(yemek),
             titleTextStyle: TextStyle(color: Colors.black),
             subtitle: Text("Tahmini süre $tahminiSure"),
             subtitleTextStyle: TextStyle(color: Color.fromARGB(255, 37, 35, 35)),
           ),
-          IconButton(
-            icon: Icon(Icons.arrow_downward),
-            onPressed: yemekGoster,
-          ),
-        ],
-      ),
+        ),
+        IconButton(
+          icon: Icon(Icons.arrow_downward),
+          onPressed: yemekGoster,
+        ),
+      ],
     );
   }
 }
