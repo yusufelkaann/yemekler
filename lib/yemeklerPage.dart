@@ -14,8 +14,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:yemekler/TarifPage.dart';
 
-import 'package:flutter/TarifPage.dart';
+//import 'package:flutter/TarifPage.dart';
 
 
 class YemeklerPage extends StatefulWidget {
@@ -86,24 +87,26 @@ class YemekRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.network(
-          yemekUrl,
-          width: 77,
-          height: 77,
-        ),
-        ListTile(
-          title: Text(yemek),
-          titleTextStyle: TextStyle(color: Colors.black),
-          subtitle: Text("Tahmini süre $tahminiSure"),
-          subtitleTextStyle: TextStyle(color: Color.fromARGB(255, 37, 35, 35)),
-        ),
-        IconButton(
-          icon: Icon(Icons.arrow_downward),
-          onPressed: yemekGoster,
-        ),
-      ],
+    return Expanded(
+      child: Row(
+        children: [
+          Image.network(
+            yemekUrl,
+            width: 77,
+            height: 77,
+          ),
+          ListTile(
+            title: Text(yemek),
+            titleTextStyle: TextStyle(color: Colors.black),
+            subtitle: Text("Tahmini süre $tahminiSure"),
+            subtitleTextStyle: TextStyle(color: Color.fromARGB(255, 37, 35, 35)),
+          ),
+          IconButton(
+            icon: Icon(Icons.arrow_downward),
+            onPressed: yemekGoster,
+          ),
+        ],
+      ),
     );
   }
 }
