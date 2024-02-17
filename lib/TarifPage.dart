@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 //rimport 'package:flutter/yemeklerPage.dart';
 
 
-import 'package:flutter/material.dart';
+
 
 class TarifPage extends StatelessWidget {
   final String dishName;

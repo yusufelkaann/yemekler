@@ -114,20 +114,32 @@ class YemekRow extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Image.network(
               yemekUrl,
               width: 77,
               height: 77,
             ),
-            SizedBox(
-              width: 30,
-              child: ListTile(
-                title: Text(yemek),
-                titleTextStyle: TextStyle(color: Colors.black),
-                subtitle: Text(" $tahminiSure"),
-                subtitleTextStyle: TextStyle(color: Color.fromARGB(255, 37, 35, 35)),
+            SizedBox(width: 10), // Adjust the spacing between the image and text
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    yemek,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 4), // Add some vertical spacing between text elements
+                  Text(
+                    tahminiSure,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 37, 35, 35),
+                    ),
+                  ),
+                ],
               ),
             ),
             IconButton(
