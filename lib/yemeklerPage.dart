@@ -120,7 +120,7 @@ class YemekRow extends StatelessWidget {
               width: 77,
               height: 77,
             ),
-            SizedBox(width: 10), // Adjust the spacing between the image and text
+            SizedBox(width: 10), 
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +132,7 @@ class YemekRow extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 4), // Add some vertical spacing between text elements
+                  SizedBox(height: 4), 
                   Text(
                     tahminiSure,
                     style: TextStyle(
